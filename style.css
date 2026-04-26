@@ -230,50 +230,64 @@ h1, h2, h3 {
   margin-bottom: 0;
 }
 
+.exp-category-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #999;
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+
 .exp-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .exp-card {
   border: 1px solid #e8e8e8;
   border-radius: 10px;
   overflow: hidden;
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, transform 0.2s;
 }
 
 .exp-card:hover {
-  box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
 }
 
-.exp-image {
-  height: 240px;
-  border-radius: 0;
+.exp-card-accent {
+  height: 5px;
+  background: linear-gradient(90deg, #1b6abf, #60a5fa);
 }
 
 .exp-body {
-  padding: 1.8rem;
+  padding: 1.5rem;
 }
 
 .exp-tag {
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #1b6abf;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.5rem;
 }
 
 .exp-body h3 {
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.35;
 }
 
 .exp-body p {
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   color: #555;
   line-height: 1.65;
 }
