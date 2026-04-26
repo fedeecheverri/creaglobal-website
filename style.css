@@ -36,20 +36,21 @@ h1, h2, h3 {
   text-align: center;
 }
 
-.two-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
-
 .section-tag {
+  display: block;
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #1b6abf;
   margin-bottom: 0.75rem;
+}
+
+.section-sub {
+  font-size: 1rem;
+  color: #666;
+  max-width: 620px;
+  margin: 0.75rem auto 3rem;
 }
 
 .placeholder-img {
@@ -70,15 +71,8 @@ h1, h2, h3 {
   z-index: 100;
 }
 
-.logo {
-  font-size: 1.25rem;
-  font-weight: 800;
-  letter-spacing: 0.06em;
-  color: #1a1a1a;
-}
-
-.logo span {
-  color: #1b6abf;
+.logo img {
+  display: block;
 }
 
 .nav-links {
@@ -146,7 +140,7 @@ h1, h2, h3 {
 .hero-content {
   position: relative;
   z-index: 1;
-  max-width: 700px;
+  max-width: 760px;
 }
 
 .hero-tag {
@@ -167,15 +161,15 @@ h1, h2, h3 {
 
 .hero-sub {
   font-size: 1.1rem;
-  color: #666;
-  max-width: 520px;
+  color: #555;
+  max-width: 580px;
   margin: 0 auto 2.5rem;
 }
 
 /* ── Buttons ── */
 .btn {
   display: inline-block;
-  padding: 0.8rem 2.2rem;
+  padding: 0.85rem 2.4rem;
   background: #1b6abf;
   color: #fff;
   border-radius: 6px;
@@ -183,7 +177,7 @@ h1, h2, h3 {
   font-weight: 500;
   border: 2px solid #1b6abf;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s;
+  transition: background 0.2s, border-color 0.2s;
   font-family: inherit;
 }
 
@@ -192,46 +186,112 @@ h1, h2, h3 {
   border-color: #1559a8;
 }
 
-/* ── About ── */
-.about {
+/* ── Trust Bar ── */
+.trust-bar {
+  background: #f8f9fb;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  padding: 1.8rem 2rem;
+  text-align: center;
+}
+
+.trust-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 1.2rem;
+}
+
+.trust-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.trust-logos span {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #aaa;
+  letter-spacing: 0.03em;
+}
+
+/* ── Experience ── */
+.experience {
   background: #fff;
 }
 
-.about .placeholder-img {
-  height: 380px;
-}
-
-.about-text .section-tag {
-  display: block;
-}
-
-.about-text h2 {
+.experience h2 {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
-.about-text p {
+.exp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.exp-card {
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.exp-card:hover {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+}
+
+.exp-image {
+  height: 240px;
+  border-radius: 0;
+}
+
+.exp-body {
+  padding: 1.8rem;
+}
+
+.exp-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1b6abf;
+  margin-bottom: 0.6rem;
+}
+
+.exp-body h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.exp-body p {
+  font-size: 0.9rem;
   color: #555;
-  font-size: 1rem;
+  line-height: 1.65;
 }
 
 /* ── Services ── */
 .services {
-  background: #f0f5ff;
+  background: #f8f9fb;
 }
 
 .services h2 {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 3rem;
 }
 
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 1.5rem;
-  margin-top: 1rem;
 }
 
 .service-card {
@@ -268,97 +328,105 @@ h1, h2, h3 {
 .service-card p {
   font-size: 0.88rem;
   color: #666;
+  line-height: 1.6;
 }
 
-/* ── Experience ── */
-.experience {
-  background: #fff;
+/* ── Methodology ── */
+.methodology {
+  background: #1b6abf;
+  color: #fff;
 }
 
-.experience h2 {
+.methodology .section-tag {
+  color: #93c5fd;
+}
+
+.methodology h2 {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 3rem;
+  color: #fff;
 }
 
-.exp-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+.methodology .section-sub {
+  color: #bfdbfe;
 }
 
-.exp-card {
-  border: 1px solid #e8e8e8;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: box-shadow 0.2s;
+.method-steps {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  margin-top: 1rem;
 }
 
-.exp-card:hover {
-  box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+.method-step {
+  flex: 1;
+  text-align: center;
+  padding: 0 2rem;
 }
 
-.exp-image {
-  height: 220px;
-  border-radius: 0;
+.step-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #93c5fd;
+  line-height: 1;
+  margin-bottom: 1rem;
 }
 
-.exp-body {
-  padding: 1.5rem;
-}
-
-.exp-tag {
-  display: inline-block;
-  font-size: 0.75rem;
+.method-step h3 {
+  font-size: 1.2rem;
   font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #1b6abf;
-  margin-bottom: 0.6rem;
-}
-
-.exp-body h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
+  color: #fff;
   margin-bottom: 0.75rem;
 }
 
-.exp-body p {
+.method-step p {
   font-size: 0.9rem;
-  color: #666;
-  line-height: 1.6;
+  color: #bfdbfe;
+  line-height: 1.65;
+}
+
+.method-divider {
+  width: 1px;
+  height: 120px;
+  background: rgba(255,255,255,0.2);
+  align-self: center;
+  flex-shrink: 0;
 }
 
 /* ── Team ── */
 .team {
-  background: #f0f5ff;
+  background: #fff;
 }
 
 .team h2 {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 3rem;
 }
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(2, minmax(220px, 320px));
   gap: 2rem;
+  justify-content: center;
 }
 
 .team-card {
   text-align: center;
+  background: #f8f9fb;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 2.5rem 2rem;
 }
 
 .team-photo {
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   margin: 0 auto 1.2rem;
 }
 
 .team-card h3 {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 600;
   margin-bottom: 0.3rem;
 }
@@ -368,7 +436,7 @@ h1, h2, h3 {
   font-weight: 600;
   color: #1b6abf;
   letter-spacing: 0.04em;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.75rem;
 }
 
 .team-bio {
@@ -378,13 +446,12 @@ h1, h2, h3 {
 
 /* ── Contact ── */
 .contact {
-  background: #fff;
+  background: #f8f9fb;
 }
 
 .contact h2 {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 3rem;
 }
 
 .contact-inner {
@@ -409,7 +476,7 @@ h1, h2, h3 {
   border-radius: 6px;
   font-size: 0.95rem;
   font-family: inherit;
-  background: #fafafa;
+  background: #fff;
   transition: border-color 0.2s;
 }
 
@@ -431,6 +498,7 @@ h1, h2, h3 {
   font-size: 0.9rem;
   color: #666;
   margin-bottom: 1rem;
+  line-height: 1.6;
 }
 
 .whatsapp-btn {
@@ -439,7 +507,7 @@ h1, h2, h3 {
   gap: 0.6rem;
   background: #25d366;
   color: #fff;
-  padding: 0.7rem 1.3rem;
+  padding: 0.75rem 1.3rem;
   border-radius: 6px;
   font-size: 0.9rem;
   font-weight: 500;
@@ -465,10 +533,6 @@ h1, h2, h3 {
   align-items: center;
   gap: 1rem;
   text-align: center;
-}
-
-.footer .logo {
-  color: #fff;
 }
 
 .footer-links a {
@@ -499,12 +563,22 @@ h1, h2, h3 {
     display: block;
   }
 
-  .two-col {
+  .exp-grid {
     grid-template-columns: 1fr;
+  }
+
+  .method-steps {
+    flex-direction: column;
+    align-items: center;
     gap: 2rem;
   }
 
-  .exp-grid {
+  .method-divider {
+    width: 60px;
+    height: 1px;
+  }
+
+  .team-grid {
     grid-template-columns: 1fr;
   }
 
@@ -513,8 +587,8 @@ h1, h2, h3 {
     gap: 2rem;
   }
 
-  .about .placeholder-img {
-    height: 240px;
+  .trust-logos {
+    gap: 1.5rem;
   }
 }
 
