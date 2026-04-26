@@ -212,11 +212,15 @@ h1, h2, h3 {
   flex-wrap: wrap;
 }
 
-.trust-logos span {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #aaa;
-  letter-spacing: 0.03em;
+.trust-logos img {
+  height: 40px;
+  width: auto;
+  filter: grayscale(100%) opacity(50%);
+  transition: filter 0.3s;
+}
+
+.trust-logos img:hover {
+  filter: grayscale(0%) opacity(100%);
 }
 
 /* ── Experience ── */
