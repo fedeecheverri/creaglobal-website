@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CREA Global — Consultoría 360</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
   <!-- Navigation -->
-  <header class="navbar">
-    <a href="#" class="logo"><img src="images/logo-blue.png" alt="CREA Global" height="40" /></a>
+  <header class="navbar" id="navbar">
+    <a href="#" class="logo"><img src="images/logo-blue.png" alt="CREA Global" height="38" /></a>
     <nav class="nav-links">
       <a href="#experiencia">Experiencia</a>
       <a href="#servicios">Servicios</a>
@@ -29,13 +29,16 @@
 
   <!-- Hero -->
   <section class="hero" id="inicio">
-    <div class="hero-overlay"></div>
+    <div class="hero-bg"></div>
     <div class="hero-content">
-      <p class="hero-tag">Consultoría 360</p>
-      <h1>Llevamos su proyecto<br>del concepto a los resultados</h1>
-      <p class="hero-sub">Estructuramos, desarrollamos, gestionamos y ejecutamos proyectos de alto impacto, acompañando a nuestros clientes en cada etapa del proceso.</p>
-      <a href="#contacto" class="btn">Contáctenos</a>
+      <p class="hero-tag reveal">Consultoría 360</p>
+      <h1 class="reveal">Llevamos su proyecto<br>del concepto a los resultados</h1>
+      <p class="hero-sub reveal">Estructuramos, desarrollamos, gestionamos y ejecutamos proyectos de alto impacto, acompañando a nuestros clientes en cada etapa del proceso.</p>
+      <a href="#contacto" class="btn reveal">Contáctenos</a>
     </div>
+    <a href="#experiencia" class="hero-scroll" aria-label="Continuar">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </a>
   </section>
 
   <!-- Trust Bar -->
@@ -51,17 +54,18 @@
     </div>
   </section>
 
-  <!-- Experience / Case Studies -->
+  <!-- Experience -->
   <section class="experience section" id="experiencia">
     <div class="container">
-      <p class="section-tag center">Experiencia</p>
-      <h2 class="center">Proyectos que hablan por sí solos</h2>
-      <p class="section-sub center">Hemos liderado iniciativas de alto impacto a nivel nacional e internacional, con resultados concretos y verificables.</p>
+      <div class="section-header reveal">
+        <p class="section-tag">Experiencia</p>
+        <h2>Proyectos que hablan<br>por sí solos</h2>
+        <p class="section-sub">Hemos liderado iniciativas de alto impacto a nivel nacional e internacional, con resultados concretos y verificables.</p>
+      </div>
 
-      <p class="exp-category-label">Exposiciones Universales</p>
+      <p class="exp-category-label reveal">Exposiciones Universales</p>
       <div class="exp-grid">
-
-        <div class="exp-card">
+        <div class="exp-card reveal">
           <div class="exp-card-accent"></div>
           <div class="exp-body">
             <span class="exp-tag">Dubái · 2020</span>
@@ -69,8 +73,7 @@
             <p>Estructuración completa y operación del proyecto para la participación de Colombia en la Exposición Universal Expo 2020 Dubái, bajo la dirección de ProColombia.</p>
           </div>
         </div>
-
-        <div class="exp-card">
+        <div class="exp-card reveal">
           <div class="exp-card-accent"></div>
           <div class="exp-body">
             <span class="exp-tag">Milán · 2015</span>
@@ -78,8 +81,7 @@
             <p>Estructuración completa y operación del proyecto para la participación de Colombia en la Exposición Universal de Milán 2015.</p>
           </div>
         </div>
-
-        <div class="exp-card">
+        <div class="exp-card reveal">
           <div class="exp-card-accent"></div>
           <div class="exp-body">
             <span class="exp-tag">Shanghái · 2010</span>
@@ -87,8 +89,7 @@
             <p>Estructuración completa y operación del proyecto para la participación de Colombia en la Exposición Universal de Shanghái 2010.</p>
           </div>
         </div>
-
-        <div class="exp-card">
+        <div class="exp-card reveal">
           <div class="exp-card-accent"></div>
           <div class="exp-body">
             <span class="exp-tag">Osaka · 2025</span>
@@ -96,13 +97,11 @@
             <p>Dirección y operación del Pabellón de Perú en la Exposición Universal de Osaka 2025.</p>
           </div>
         </div>
-
       </div>
 
-      <p class="exp-category-label">Conferencias Internacionales</p>
+      <p class="exp-category-label reveal">Conferencias Internacionales</p>
       <div class="exp-grid">
-
-        <div class="exp-card">
+        <div class="exp-card reveal">
           <div class="exp-card-accent"></div>
           <div class="exp-body">
             <span class="exp-tag">Cali · Octubre 2024</span>
@@ -110,8 +109,7 @@
             <p>Estructuración completa y operación del proyecto para la cumbre mundial de biodiversidad de las Naciones Unidas, celebrada en Cali bajo el lema "Paz con la Naturaleza". El evento más importante sobre biodiversidad del planeta, con delegaciones de más de 190 países.</p>
           </div>
         </div>
-
-        <div class="exp-card">
+        <div class="exp-card reveal">
           <div class="exp-card-accent"></div>
           <div class="exp-body">
             <span class="exp-tag">Cartagena · Febrero 2026</span>
@@ -119,22 +117,19 @@
             <p>Estructuración completa y operación del proyecto para la segunda conferencia internacional organizada por la FAO, celebrada en Cartagena de Indias. Veinte años después de la histórica conferencia de Porto Alegre (2006), reunió a gobiernos, organizaciones internacionales y sociedad civil de más de 100 países.</p>
           </div>
         </div>
-
-        <div class="exp-card">
+        <div class="exp-card reveal">
           <div class="exp-card-accent"></div>
           <div class="exp-body">
             <span class="exp-tag">Bogotá · Octubre 2025</span>
             <h3>Día Mundial de las Ciudades 2025 — ONU-Hábitat</h3>
-            <p>Estructuración completa y operación del proyecto para la celebración global del Día Mundial de las Ciudades, organizada por ONU-Hábitat en el Ágora Bogotá. Bajo el tema "Ciudades inteligentes centradas en las personas", reunió a gobiernos, agencias de la ONU, academia y sector privado. Segunda edición global celebrada en América Latina.</p>
+            <p>Estructuración completa y operación del proyecto para la celebración global del Día Mundial de las Ciudades, organizada por ONU-Hábitat en el Ágora Bogotá. Bajo el tema "Ciudades inteligentes centradas en las personas", reunió a gobiernos, agencias de la ONU, academia y sector privado.</p>
           </div>
         </div>
-
       </div>
 
-      <p class="exp-category-label">Misiones Comerciales</p>
+      <p class="exp-category-label reveal">Misiones Comerciales</p>
       <div class="exp-grid">
-
-        <div class="exp-card">
+        <div class="exp-card reveal">
           <div class="exp-card-accent"></div>
           <div class="exp-body">
             <span class="exp-tag">Japón · 2025</span>
@@ -142,8 +137,7 @@
             <p>Estructuración y operación de la misión comercial de la Cámara de Comercio de Cali en Japón.</p>
           </div>
         </div>
-
-        <div class="exp-card">
+        <div class="exp-card reveal">
           <div class="exp-card-accent"></div>
           <div class="exp-body">
             <span class="exp-tag">Japón · 2025</span>
@@ -151,7 +145,6 @@
             <p>Estructuración y operación de la misión comercial y académica del Politécnico Grancolombiano en Japón.</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -159,43 +152,40 @@
   <!-- Services -->
   <section class="services section" id="servicios">
     <div class="container">
-      <p class="section-tag center">Servicios</p>
-      <h2 class="center">Lo que hacemos por usted</h2>
-      <p class="section-sub center">Cada cliente presenta desafíos distintos. Nuestro enfoque interdisciplinario nos permite generar resultados de valor en cualquier sector.</p>
+      <div class="section-header reveal">
+        <p class="section-tag">Servicios</p>
+        <h2>Lo que hacemos<br>por usted</h2>
+        <p class="section-sub">Cada cliente presenta desafíos distintos. Nuestro enfoque interdisciplinario nos permite generar resultados de valor en cualquier sector.</p>
+      </div>
       <div class="services-grid">
-
-        <div class="service-card">
+        <div class="service-card reveal">
           <div class="service-icon">
             <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12h6M9 16h4"/></svg>
           </div>
           <h3>Gestión de Proyectos</h3>
           <p>Llevamos su proyecto del concepto a los resultados. Asesoramos en viabilidad, estructuración y ejecución, alineados con los objetivos de su organización.</p>
         </div>
-
-        <div class="service-card">
+        <div class="service-card reveal">
           <div class="service-icon">
             <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18 9l-5 5-4-4-4 4"/></svg>
           </div>
           <h3>Estrategia Comercial y de Mercadeo</h3>
           <p>Conectamos su propuesta con el mercado correcto. Diseñamos e implementamos acciones que comunican su valor y generan resultados comerciales tangibles.</p>
         </div>
-
-        <div class="service-card">
+        <div class="service-card reveal">
           <div class="service-icon">
             <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/></svg>
           </div>
           <h3>Estrategia de Internacionalización</h3>
           <p>Abrimos las puertas del mercado internacional para su empresa. Le acompañamos en la identificación de mercados, canales de distribución y alianzas estratégicas.</p>
         </div>
-
-        <div class="service-card">
+        <div class="service-card reveal">
           <div class="service-icon">
             <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
           </div>
           <h3>Gestión de Comunicaciones</h3>
           <p>Comunicamos su valor con claridad y estrategia. Desarrollamos planes de comunicación corporativa e institucional adaptados a las necesidades de su organización.</p>
         </div>
-
       </div>
     </div>
   </section>
@@ -203,33 +193,29 @@
   <!-- Methodology -->
   <section class="methodology section" id="metodologia">
     <div class="container">
-      <p class="section-tag center">Metodología</p>
-      <h2 class="center">Cómo trabajamos</h2>
-      <p class="section-sub center">Nuestro enfoque 360 garantiza que ninguna etapa de su proyecto quede desatendida.</p>
+      <div class="section-header reveal">
+        <p class="section-tag">Metodología</p>
+        <h2>Cómo trabajamos</h2>
+        <p class="section-sub">Nuestro enfoque 360 garantiza que ninguna etapa de su proyecto quede desatendida.</p>
+      </div>
       <div class="method-steps">
-
-        <div class="method-step">
+        <div class="method-step reveal">
           <div class="step-number">01</div>
           <h3>Estructuramos</h3>
           <p>Analizamos su proyecto, evaluamos su viabilidad y definimos una hoja de ruta clara con objetivos medibles.</p>
         </div>
-
         <div class="method-divider"></div>
-
-        <div class="method-step">
+        <div class="method-step reveal">
           <div class="step-number">02</div>
           <h3>Desarrollamos</h3>
           <p>Diseñamos las estrategias comerciales, de comunicación e internacionalización necesarias para alcanzar sus metas.</p>
         </div>
-
         <div class="method-divider"></div>
-
-        <div class="method-step">
+        <div class="method-step reveal">
           <div class="step-number">03</div>
           <h3>Ejecutamos</h3>
           <p>Gestionamos y ejecutamos cada etapa del proyecto, acompañándole hasta la entrega de resultados concretos.</p>
         </div>
-
       </div>
     </div>
   </section>
@@ -237,25 +223,24 @@
   <!-- Team -->
   <section class="team section" id="equipo">
     <div class="container">
-      <p class="section-tag center">Equipo</p>
-      <h2 class="center">Experiencia que genera confianza</h2>
-      <p class="section-sub center">Un equipo senior con décadas de experiencia en proyectos nacionales e internacionales.</p>
+      <div class="section-header reveal">
+        <p class="section-tag">Equipo</p>
+        <h2>Experiencia que<br>genera confianza</h2>
+        <p class="section-sub">Un equipo senior con décadas de experiencia en proyectos nacionales e internacionales.</p>
+      </div>
       <div class="team-grid">
-
-        <div class="team-card">
+        <div class="team-card reveal">
           <div class="team-photo placeholder-img"></div>
           <h3>Mauricio Prada</h3>
           <p class="team-role">Abogado</p>
           <p class="team-bio">Más de 15 años de experiencia en estructuración de proyectos y derecho corporativo e internacional.</p>
         </div>
-
-        <div class="team-card">
+        <div class="team-card reveal">
           <div class="team-photo placeholder-img"></div>
           <h3>Paula Douat Corredor</h3>
           <p class="team-role">Ingeniera Industrial</p>
           <p class="team-bio">Más de 20 años de experiencia en gestión de proyectos, negocios internacionales y dirección de operaciones.</p>
         </div>
-
       </div>
     </div>
   </section>
@@ -263,10 +248,12 @@
   <!-- Contact -->
   <section class="contact section" id="contacto">
     <div class="container">
-      <p class="section-tag center">Contacto</p>
-      <h2 class="center">Hablemos de su proyecto</h2>
-      <p class="section-sub center">Cuéntenos qué necesita. Estaremos en contacto a la brevedad.</p>
-      <div class="contact-inner">
+      <div class="section-header reveal">
+        <p class="section-tag">Contacto</p>
+        <h2>Hablemos de<br>su proyecto</h2>
+        <p class="section-sub">Cuéntenos qué necesita. Estaremos en contacto a la brevedad.</p>
+      </div>
+      <div class="contact-inner reveal">
         <form class="contact-form">
           <input type="text" placeholder="Su nombre" required />
           <input type="email" placeholder="Su correo electrónico" required />
@@ -288,13 +275,33 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-inner">
-      <img src="images/logo-white.png" alt="CREA Global" height="36" />
+      <img src="images/logo-white.png" alt="CREA Global" height="34" />
       <div class="footer-links">
         <a href="#">Política de Privacidad</a>
       </div>
       <p class="footer-copy">&copy; 2026 CREA Global. Todos los derechos reservados. Creado por <a href="#" target="_blank">Elemental Lab</a>.</p>
     </div>
   </footer>
+
+  <script>
+    // Navbar shadow on scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
 
 </body>
 </html>
