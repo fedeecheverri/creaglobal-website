@@ -92,6 +92,9 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
   border-color: var(--border);
   box-shadow: 0 2px 16px rgba(0,0,0,0.07);
 }
+.logo { display: flex; align-items: center; flex-shrink: 0; }
+.logo img { display: block; height: 36px; width: auto; }
+
 .nav-links { display: flex; gap: 2rem; }
 .nav-links a {
   font-family: 'Montserrat', sans-serif;
