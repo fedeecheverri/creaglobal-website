@@ -153,16 +153,24 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: var(--navy);
-  background-image:
-    radial-gradient(ellipse at 10% 70%, rgba(31,166,122,0.2) 0%, transparent 50%),
-    radial-gradient(ellipse at 90% 20%, rgba(10,42,102,0.6) 0%, transparent 55%),
-    radial-gradient(ellipse at 50% 110%, rgba(0,0,0,0.5) 0%, transparent 55%);
-  animation: heroPulse 12s ease-in-out infinite alternate;
+  background-image: url('images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: heroZoom 20s ease-in-out infinite alternate;
 }
-@keyframes heroPulse {
-  from { background-size: 100% 100%, 100% 100%, 100% 100%; }
-  to   { background-size: 105% 105%, 103% 103%, 100% 100%; }
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(10,42,102,0.72) 0%,
+    rgba(5,14,26,0.82) 100%
+  );
+}
+@keyframes heroZoom {
+  from { transform: scale(1); }
+  to   { transform: scale(1.06); }
 }
 .hero-content {
   position: relative;
@@ -287,6 +295,16 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
   height: 3px;
   background: linear-gradient(90deg, var(--green), #5dcba8);
 }
+.exp-card-img {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+.exp-card:hover .exp-card-img {
+  transform: scale(1.04);
+}
+.exp-card { overflow: hidden; }
 .exp-body { padding: 1.5rem; }
 .exp-tag {
   display: inline-block;
