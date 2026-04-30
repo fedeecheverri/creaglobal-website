@@ -2,17 +2,19 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --navy:       #0A2A66;
-  --black:      #000000;
-  --dark:       #2B2B2B;
-  --gray:       #EAEAEA;
+  /* Brand palette — Manual de Marca CREA Global */
+  --black:      #000000; /* Negro */
+  --dark:       #2B2B2B; /* Gris Oscuro */
+  --gray:       #EAEAEA; /* Gris Claro */
   --white:      #FFFFFF;
-  --off-white:  #F7F8FA;
-  --green:      #1FA67A;
-  --orange:     #F28C38;
-  --text:       #111111;
-  --muted:      #666666;
-  --border:     #E2E2E2;
+  --navy:       #0A2A66; /* Azul Corporativo */
+  --green:      #1FA67A; /* Verde Estratégico */
+  --orange:     #F28C38; /* Naranja Acento */
+  /* Derived */
+  --off-white:  #F5F5F5;
+  --text:       #000000;
+  --muted:      #2B2B2B;
+  --border:     #EAEAEA;
 }
 
 html { scroll-behavior: smooth; }
