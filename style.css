@@ -20,7 +20,8 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
   color: var(--text);
   background: var(--white);
   line-height: 1.7;
@@ -28,7 +29,9 @@ body {
 }
 
 a { text-decoration: none; color: inherit; }
-h1, h2, h3 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
+h1, h2, h3 { line-height: 1.15; }
+h1, h2 { font-family: 'Bebas Neue', sans-serif; text-transform: uppercase; letter-spacing: 0.04em; }
+h3 { font-family: 'DM Sans', sans-serif; font-weight: 500; }
 
 /* ── Reveal animations ── */
 .reveal {
@@ -51,20 +54,18 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
 .section-header { text-align: center; margin-bottom: 3.5rem; }
 .section-tag {
   display: inline-block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 0.68rem;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--green);
   margin-bottom: 0.9rem;
 }
 .section-header h2 {
-  font-size: clamp(1.9rem, 4vw, 2.8rem);
-  font-weight: 800;
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
   color: var(--black);
   margin-bottom: 1rem;
-  letter-spacing: -0.02em;
 }
 .section-sub {
   font-size: 1rem;
@@ -99,9 +100,9 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
 
 .nav-links { display: flex; gap: 2rem; }
 .nav-links a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.04em;
   color: var(--dark);
   transition: color 0.2s;
@@ -116,33 +117,28 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
 .btn {
   display: inline-block;
   padding: 0.85rem 2.2rem;
-  background: var(--black);
+  background: var(--orange);
   color: var(--white);
   border-radius: 4px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 0.82rem;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  border: 2px solid var(--black);
+  border: 2px solid var(--orange);
   cursor: pointer;
   transition: background 0.25s, color 0.25s, transform 0.2s, box-shadow 0.2s;
 }
 .btn:hover {
-  background: var(--green);
-  border-color: var(--green);
+  background: #d9781e;
+  border-color: #d9781e;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(31,166,122,0.3);
+  box-shadow: 0 8px 24px rgba(242,140,56,0.35);
 }
 .btn-sm { padding: 0.6rem 1.4rem; font-size: 0.75rem; }
-.btn-hero {
-  background: var(--green);
-  border-color: var(--green);
-}
+.btn-hero { }
 .btn-hero:hover {
-  background: #198f68;
-  border-color: #198f68;
-  box-shadow: 0 8px 24px rgba(31,166,122,0.4);
+  box-shadow: 0 8px 24px rgba(242,140,56,0.45);
 }
 
 /* ── Hero ── */
@@ -185,9 +181,9 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
 }
 .hero-tag {
   display: inline-block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 0.68rem;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--green);
@@ -198,16 +194,15 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
   margin-bottom: 1.8rem;
 }
 .hero-content h1 {
-  font-size: clamp(2.8rem, 6.5vw, 5rem);
-  font-weight: 800;
+  font-size: clamp(3.5rem, 8vw, 7rem);
   color: var(--white);
   margin-bottom: 1.2rem;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.06em;
 }
 .hero-tagline {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 400;
   color: rgba(255,255,255,0.7);
   letter-spacing: 0.04em;
   margin-bottom: 1.2rem;
@@ -244,9 +239,9 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
   text-align: center;
 }
 .trust-label {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 0.65rem;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #b0b8c4;
@@ -270,9 +265,9 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
 /* ── Experience ── */
 .experience { background: var(--off-white); }
 .exp-category-label {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 0.68rem;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #9aa3af;
@@ -313,9 +308,9 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
 .exp-body { padding: 1.5rem; }
 .exp-tag {
   display: inline-block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 0.65rem;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--green);
@@ -403,9 +398,8 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
 }
 .method-step { flex: 1; text-align: center; padding: 0 2.5rem; }
 .step-number {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 4rem;
-  font-weight: 800;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 5rem;
   color: transparent;
   -webkit-text-stroke: 1.5px rgba(31,166,122,0.35);
   line-height: 1;
@@ -459,9 +453,9 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
 }
 .team-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.3rem; color: var(--black); }
 .team-role {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 0.72rem;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--green);
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -498,7 +492,8 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
   border: 1px solid rgba(255,255,255,0.1);
   border-radius: 4px;
   font-size: 0.9rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
   background: rgba(255,255,255,0.05);
   color: var(--white);
   transition: border-color 0.2s, background 0.2s;
@@ -522,9 +517,9 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
   color: var(--white);
   padding: 0.8rem 1.5rem;
   border-radius: 4px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 500;
   transition: background 0.2s, transform 0.2s;
 }
 .whatsapp-btn:hover { background: #1db954; transform: translateY(-2px); }
@@ -541,15 +536,30 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
   text-align: center;
 }
 .footer-tagline {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0.08em;
   color: rgba(255,255,255,0.25);
 }
 .footer-links a { color: #4a5568; font-size: 0.8rem; transition: color 0.2s; }
 .footer-links a:hover { color: var(--green); }
 .footer-copy { font-size: 0.75rem; }
+
+/* ── Method closing phrase ── */
+.method-closing {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--white);
+  text-align: center;
+  margin-top: 3.5rem;
+  opacity: 0.75;
+  position: relative;
+  z-index: 1;
+}
+.method-closing.visible { opacity: 1; }
 
 /* ── Responsive ── */
 @media (max-width: 768px) {
@@ -563,7 +573,7 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
 }
 @media (max-width: 480px) {
   .navbar { padding: 0.9rem 1.2rem; }
-  .hero-content h1 { font-size: 2.4rem; }
+  .hero-content h1 { font-size: 3rem; }
   .section { padding: 4rem 0; }
   .container { padding: 0 1.5rem; }
 }
