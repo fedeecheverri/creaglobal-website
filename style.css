@@ -329,6 +329,12 @@ h1, h2, h3 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
   color: var(--black);
 }
 .exp-body p { font-size: 0.875rem; color: var(--muted); line-height: 1.7; }
+.exp-body-extra {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+.exp-card-featured { max-width: 680px; }
 
 /* ── Services ── */
 .services { background: var(--white); }
