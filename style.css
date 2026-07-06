@@ -165,8 +165,8 @@ h3 { font-family: 'DM Sans', sans-serif; font-weight: 500; }
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(10,42,102,0.72) 0%,
-    rgba(5,14,26,0.82) 100%
+    rgba(10,42,102,0.55) 0%,
+    rgba(5,14,26,0.72) 100%
   );
 }
 @keyframes heroZoom {
@@ -263,7 +263,7 @@ h3 { font-family: 'DM Sans', sans-serif; font-weight: 500; }
 .trust-logos img:hover { filter: grayscale(0%) opacity(100%); }
 
 /* ── Experience ── */
-.experience { background: var(--off-white); }
+.experience { background: var(--white); }
 .exp-category-label {
   font-family: 'DM Sans', sans-serif;
   font-size: 0.68rem;
@@ -296,7 +296,7 @@ h3 { font-family: 'DM Sans', sans-serif; font-weight: 500; }
   background: linear-gradient(90deg, var(--green), #5dcba8);
 }
 .exp-card-img {
-  height: 200px;
+  height: 260px;
   background-size: cover;
   background-position: center;
   transition: transform 0.5s ease;
@@ -339,7 +339,7 @@ h3 { font-family: 'DM Sans', sans-serif; font-weight: 500; }
   gap: 1.5rem;
 }
 .service-card {
-  background: var(--off-white);
+  background: var(--white);
   border: 1px solid var(--border);
   border-radius: 6px;
   padding: 2rem 1.8rem;
@@ -425,10 +425,10 @@ h3 { font-family: 'DM Sans', sans-serif; font-weight: 500; }
 }
 
 /* ── Team ── */
-.team { background: var(--off-white); }
+.team { background: var(--white); }
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(220px, 340px));
+  grid-template-columns: repeat(3, minmax(220px, 320px));
   gap: 2rem;
   justify-content: center;
 }
@@ -567,7 +567,7 @@ h3 { font-family: 'DM Sans', sans-serif; font-weight: 500; }
   .hamburger { display: block; }
   .method-steps { flex-direction: column; align-items: center; gap: 2.5rem; }
   .method-divider { width: 50px; height: 1px; }
-  .team-grid { grid-template-columns: 1fr; max-width: 340px; margin: 0 auto; }
+  .team-grid { grid-template-columns: 1fr; max-width: 360px; margin: 0 auto; }
   .contact-inner { grid-template-columns: 1fr; gap: 2.5rem; }
   .trust-logos { gap: 1.5rem; }
 }
