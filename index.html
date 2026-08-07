@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CREA Global — Estrategia. Ejecución. Resultados.</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;0,400;0,500&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
 </head>
 <body>
 
@@ -33,8 +33,8 @@
     <div class="hero-bg"></div>
     <div class="hero-content">
       <p class="hero-tag reveal">Consultoría 360 · Internacional</p>
-      <h1 class="reveal">HACEMOS QUE SUCEDA.</h1>
-      <p class="hero-tagline reveal">Estrategia. Ejecución. <span class="accent-green">Resultados.</span></p>
+      <h1 class="reveal">Hacemos que las cosas pasen.</h1>
+      <p class="hero-tagline reveal">Estrategia. Ejecución. <span class="accent-bronce">Resultados.</span></p>
       <a href="#contacto" class="btn btn-hero reveal">Hablemos de su proyecto</a>
     </div>
     <a href="#experiencia" class="hero-scroll" aria-label="Continuar">
@@ -51,6 +51,8 @@
       <img src="images/logo-camara-cali.png" alt="Cámara de Comercio de Cali" />
       <img src="images/logo-procafecol.png" alt="Procafecol" />
       <img src="images/logo-politecnico.png" alt="Politécnico Grancolombiano" />
+      <img src="images/logo-yawa.png" alt="Yawa" />
+      <img src="images/logo-alcaldia-cali.png" alt="Alcaldía de Cali" />
     </div>
   </section>
 
@@ -63,10 +65,13 @@
         <p class="section-sub">Estructuramos y ejecutamos proyectos complejos en escenarios internacionales. No como asesores externos — como parte del equipo que los hace pasar.</p>
       </div>
 
+      <!-- .exp-media acepta <img> hoy; para agregar video más adelante, reemplazar el <img>
+           por <video autoplay muted loop playsinline poster="[misma imagen]" src="[clip].mp4"></video>
+           dentro del mismo contenedor — comparte posicionamiento y hover con la imagen. -->
       <p class="exp-category-label reveal">Exposiciones Universales</p>
       <div class="exp-grid">
         <div class="exp-card reveal">
-          <div class="exp-card-img" style="background-image: url('images/project-shanghai.jpg')"></div>
+          <div class="exp-media"><img src="images/project-shanghai.jpg" alt="Pabellón Colombia en Expo Shanghái 2010" loading="lazy" /></div>
           <div class="exp-body">
             <span class="exp-tag">Shanghái · 2010</span>
             <h3>Expo Shanghái 2010 — Pabellón Colombia</h3>
@@ -74,7 +79,7 @@
           </div>
         </div>
         <div class="exp-card reveal">
-          <div class="exp-card-img" style="background-image: url('images/project-milan.jpg')"></div>
+          <div class="exp-media"><img src="images/project-milan.jpg" alt="Pabellón Colombia en Expo Milán 2015" loading="lazy" /></div>
           <div class="exp-body">
             <span class="exp-tag">Milán · 2015</span>
             <h3>Expo Milán 2015 — Pabellón Colombia</h3>
@@ -82,7 +87,7 @@
           </div>
         </div>
         <div class="exp-card reveal">
-          <div class="exp-card-img" style="background-image: url('images/project-dubai.jpg')"></div>
+          <div class="exp-media"><img src="images/project-dubai.jpg" alt="Pabellón Colombia en Expo Dubái 2020" loading="lazy" /></div>
           <div class="exp-body">
             <span class="exp-tag">Dubái · 2020</span>
             <h3>Expo Dubai 2020 — Pabellón Colombia</h3>
@@ -90,7 +95,7 @@
           </div>
         </div>
         <div class="exp-card reveal">
-          <div class="exp-card-img" style="background-image: url('images/project-osaka.jpg')"></div>
+          <div class="exp-media"><img src="images/project-osaka.jpg" alt="Pabellón Perú en Expo Osaka 2025" loading="lazy" /></div>
           <div class="exp-body">
             <span class="exp-tag">Osaka · 2025</span>
             <h3>Expo Osaka 2025 — Pabellón Perú</h3>
@@ -102,7 +107,7 @@
       <p class="exp-category-label reveal">Conferencias Internacionales</p>
       <div class="exp-grid">
         <div class="exp-card reveal">
-          <div class="exp-card-img" style="background-image: url('images/project-cop16.jpg')"></div>
+          <div class="exp-media"><img src="images/project-cop16.jpg" alt="COP16 en Cali, 2024" loading="lazy" /></div>
           <div class="exp-body">
             <span class="exp-tag">Cali · Octubre 2024</span>
             <h3>COP16 — 16.ª Conferencia de las Partes del Convenio sobre la Diversidad Biológica</h3>
@@ -110,7 +115,7 @@
           </div>
         </div>
         <div class="exp-card reveal">
-          <div class="exp-card-img" style="background-image: url('images/project-ciudades.jpg')"></div>
+          <div class="exp-media"><img src="images/project-ciudades.jpg" alt="Día Mundial de las Ciudades 2025 en Bogotá" loading="lazy" /></div>
           <div class="exp-body">
             <span class="exp-tag">Bogotá · Octubre 2025</span>
             <h3>Día Mundial de las Ciudades 2025 — ONU-Hábitat</h3>
@@ -118,7 +123,7 @@
           </div>
         </div>
         <div class="exp-card reveal">
-          <div class="exp-card-img" style="background-image: url('images/project-icarrd.jpg')"></div>
+          <div class="exp-media"><img src="images/project-icarrd.jpg" alt="ICARRD+20 en Cartagena" loading="lazy" /></div>
           <div class="exp-body">
             <span class="exp-tag">Cartagena · Febrero 2026</span>
             <h3>ICARRD+20 — II Conferencia Internacional de Reforma Agraria y Desarrollo Rural</h3>
@@ -252,19 +257,19 @@
       </div>
       <div class="team-grid">
         <div class="team-card reveal">
-          <div class="team-photo placeholder-img"></div>
+          <img class="team-photo" src="images/team-mauricio.jpeg" alt="Mauricio Prada" />
           <h3>Mauricio Prada</h3>
           <p class="team-role">Abogado</p>
           <p class="team-bio">Abogado, Universidad Externado de Colombia. Estructuró y ejecutó la participación de Colombia en las Expos Universales de Shanghái 2010, Milán 2015 y Dubái 2020. Dirigió la Zona Verde de la COP16 Cali 2024 y gerenció la Conferencia Internacional ICARRD+20 en Cartagena, con delegaciones de más de 100 países.</p>
         </div>
         <div class="team-card reveal">
-          <div class="team-photo placeholder-img"></div>
+          <img class="team-photo" src="images/team-paula.jpeg" alt="Paula Douat Corredor" />
           <h3>Paula Douat Corredor</h3>
           <p class="team-role">Ingeniera Industrial</p>
           <p class="team-bio">Ingeniera Industrial (Uniandes), Máster en Gestión Deportiva (Universidad de Poitiers, Francia). Participó en la estructuración de la participación de Colombia en Expo Shanghái 2010 y dirigió los pabellones de Colombia en Milán 2015 y Dubái 2020, y el de Perú en Expo Osaka 2025. Gerente General de la COP16 Cali 2024.</p>
         </div>
         <div class="team-card reveal">
-          <div class="team-photo placeholder-img"></div>
+          <img class="team-photo" src="images/team-federico.png" alt="Federico Echeverri" />
           <h3>Federico Echeverri</h3>
           <p class="team-role">Ingeniero Industrial</p>
           <p class="team-bio">Ha operado en terreno cinco proyectos internacionales de gran escala — Expo Milán 2015, Expo Dubái 2020, COP16 Cali 2024, la Conferencia Internacional ICARRD+20 en Cartagena (2026) y Expo Osaka 2025 — liderando equipos multiculturales y logística compleja en cada uno.</p>
@@ -305,7 +310,7 @@
   <footer class="footer">
     <div class="footer-inner">
       <img src="images/isotipo-negativo-fondo-transparente.png" alt="CREA Global" height="48" />
-      <p class="footer-tagline">Estrategia. Ejecución. <span class="accent-green">Resultados.</span></p>
+      <p class="footer-tagline">Hacemos que las cosas pasen.</p>
       <div class="footer-links">
         <a href="#">Política de Privacidad</a>
       </div>
