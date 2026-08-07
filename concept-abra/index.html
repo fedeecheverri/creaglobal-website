@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CREA Global — Concepto Editorial (ref. ABRA)</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,300;0,400;0,500&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <p class="concept-flag">Concepto interno — inspirado en abraconsult.com — no es el sitio publicado</p>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <a href="#" class="logo"><img src="../images/logo-white-new.jpg" alt="CREA Global" height="32" /></a>
+    <nav class="nav-links">
+      <a href="#experiencia">Experiencia</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#metodologia">Metodología</a>
+      <a href="#equipo">Equipo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#contacto" class="btn btn-sm">Contáctenos</a>
+      <button class="hamburger" aria-label="Menú">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="inicio">
+    <!-- .media-fill acepta <img> hoy; para video, agregar <video autoplay muted loop
+         playsinline poster="../images/hero-bg.jpg" src="[clip].mp4"> como primer hijo. -->
+    <div class="media-fill hero-media"><img src="../images/hero-bg.jpg" alt="" /></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow reveal">Consultoría 360 · Internacional</p>
+      <h1 class="reveal">Hacemos que las cosas pasen.</h1>
+      <p class="hero-tagline reveal">Estrategia. Ejecución. <span class="accent-bronce">Resultados.</span></p>
+      <a href="#contacto" class="btn btn-hero reveal">Hablemos de su proyecto</a>
+    </div>
+    <a href="#experiencia" class="hero-scroll" aria-label="Continuar">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </a>
+  </section>
+
+  <!-- Trust Bar -->
+  <section class="trust-bar">
+    <p class="trust-label">Han confiado en nosotros</p>
+    <div class="trust-logos">
+      <img src="../images/logo-procolombia.png" alt="ProColombia" />
+      <img src="../images/logo-servientrega.png" alt="Servientrega" />
+      <img src="../images/logo-camara-cali.png" alt="Cámara de Comercio de Cali" />
+      <img src="../images/logo-procafecol.png" alt="Procafecol" />
+      <img src="../images/logo-politecnico.png" alt="Politécnico Grancolombiano" />
+      <img src="../images/logo-yawa.png" alt="Yawa" />
+      <img src="../images/logo-alcaldia-cali.png" alt="Alcaldía de Cali" />
+    </div>
+  </section>
+
+  <!-- Experience — story panels, one flagship project per pantalla, al estilo ABRA -->
+  <section class="story" id="experiencia">
+    <div class="story-intro">
+      <p class="eyebrow reveal">Experiencia</p>
+      <h2 class="reveal">Hemos estado ahí.<br>Sabemos cómo funciona.</h2>
+    </div>
+
+    <!-- .media-fill acepta <img> hoy; para video, agregar <video autoplay muted loop
+         playsinline poster="[misma imagen]" src="[clip].mp4"> como primer hijo, en vez
+         del <img>, dentro de cada .story-media. -->
+
+    <article class="story-panel">
+      <div class="story-media media-fill"><img src="../images/project-shanghai.jpg" alt="Pabellón Colombia en Expo Shanghái 2010" /></div>
+      <div class="story-overlay"></div>
+      <div class="story-content">
+        <span class="story-index">01 / 07</span>
+        <span class="eyebrow">Shanghái · China · 2010</span>
+        <h3>Expo Shanghái 2010<br>Pabellón Colombia</h3>
+        <p>Estructuración completa y operación del proyecto para la participación de Colombia en la Exposición Universal de Shanghái 2010.</p>
+      </div>
+    </article>
+
+    <article class="story-panel">
+      <div class="story-media media-fill"><img src="../images/project-milan.jpg" alt="Pabellón Colombia en Expo Milán 2015" /></div>
+      <div class="story-overlay"></div>
+      <div class="story-content">
+        <span class="story-index">02 / 07</span>
+        <span class="eyebrow">Milán · Italia · 2015</span>
+        <h3>Expo Milán 2015<br>Pabellón Colombia</h3>
+        <p>Estructuración completa y operación del proyecto para la participación de Colombia en la Exposición Universal de Milán 2015.</p>
+      </div>
+    </article>
+
+    <article class="story-panel">
+      <div class="story-media media-fill"><img src="../images/project-dubai.jpg" alt="Pabellón Colombia en Expo Dubái 2020" /></div>
+      <div class="story-overlay"></div>
+      <div class="story-content">
+        <span class="story-index">03 / 07</span>
+        <span class="eyebrow">Dubái · EAU · 2020</span>
+        <h3>Expo Dubái 2020<br>Pabellón Colombia</h3>
+        <p>Estructuración completa y operación del proyecto para la participación de Colombia en la Exposición Universal Expo 2020 Dubái, bajo la dirección de ProColombia.</p>
+      </div>
+    </article>
+
+    <article class="story-panel">
+      <div class="story-media media-fill"><img src="../images/project-cop16.jpg" alt="COP16 en Cali, 2024" /></div>
+      <div class="story-overlay"></div>
+      <div class="story-content">
+        <span class="story-index">04 / 07</span>
+        <span class="eyebrow">Cali · Colombia · Octubre 2024</span>
+        <h3>COP16<br>Convenio sobre la Diversidad Biológica</h3>
+        <p>Estructuración completa y operación del proyecto para la cumbre mundial de biodiversidad de las Naciones Unidas, celebrada bajo el lema "Paz con la Naturaleza". El evento más importante sobre biodiversidad del planeta, con delegaciones de más de 190 países.</p>
+      </div>
+    </article>
+
+    <article class="story-panel">
+      <div class="story-media media-fill"><img src="../images/project-osaka.jpg" alt="Pabellón Perú en Expo Osaka 2025" /></div>
+      <div class="story-overlay"></div>
+      <div class="story-content">
+        <span class="story-index">05 / 07</span>
+        <span class="eyebrow">Osaka · Japón · 2025</span>
+        <h3>Expo Osaka 2025<br>Pabellón Perú</h3>
+        <p>Dirección y operación del Pabellón de Perú en la Exposición Universal de Osaka 2025.</p>
+      </div>
+    </article>
+
+    <article class="story-panel">
+      <div class="story-media media-fill"><img src="../images/project-ciudades.jpg" alt="Día Mundial de las Ciudades 2025 en Bogotá" /></div>
+      <div class="story-overlay"></div>
+      <div class="story-content">
+        <span class="story-index">06 / 07</span>
+        <span class="eyebrow">Bogotá · Colombia · Octubre 2025</span>
+        <h3>Día Mundial de las Ciudades 2025<br>ONU-Hábitat</h3>
+        <p>Estructuración completa y operación del proyecto para la celebración global del Día Mundial de las Ciudades en el Ágora Bogotá. Bajo el tema "Ciudades inteligentes centradas en las personas", reunió a gobiernos, agencias de la ONU, academia y sector privado.</p>
+      </div>
+    </article>
+
+    <article class="story-panel">
+      <div class="story-media media-fill"><img src="../images/project-icarrd.jpg" alt="ICARRD+20 en Cartagena" /></div>
+      <div class="story-overlay"></div>
+      <div class="story-content">
+        <span class="story-index">07 / 07</span>
+        <span class="eyebrow">Cartagena · Colombia · Febrero 2026</span>
+        <h3>ICARRD+20<br>Reforma Agraria y Desarrollo Rural</h3>
+        <p>Estructuración completa y operación del proyecto para la segunda conferencia internacional organizada por la FAO. Reunió a gobiernos, organizaciones internacionales y sociedad civil de más de 100 países.</p>
+      </div>
+    </article>
+
+    <!-- Misiones y estrategia comercial: sin fotografía todavía — listado compacto,
+         listo para convertirse en panel de historia cuando haya imagen o video. -->
+    <div class="also-list">
+      <p class="also-label">También hemos operado</p>
+      <div class="also-row reveal">
+        <span class="eyebrow">Japón · 2025</span>
+        <h4>Misión Comercial — Cámara de Comercio de Cali</h4>
+        <p>Estructuración y operación de la misión comercial de la Cámara de Comercio de Cali en Japón.</p>
+      </div>
+      <div class="also-row reveal">
+        <span class="eyebrow">Japón · 2025</span>
+        <h4>Misión Comercial y Académica — Politécnico Grancolombiano</h4>
+        <p>Estructuración y operación de la misión comercial y académica del Politécnico Grancolombiano en Japón.</p>
+      </div>
+      <div class="also-row reveal">
+        <span class="eyebrow">Singapur · 2026</span>
+        <h4>Misión Comercial y Diplomática — Alcaldía de Cali</h4>
+        <p>Estructuración y operación de la misión comercial y diplomática de la Secretaría de Desarrollo Económico de Cali en el World Cities Summit.</p>
+      </div>
+      <div class="also-row also-row-featured reveal">
+        <span class="eyebrow">Juan Valdez · Japón · 2025</span>
+        <h4>Presencia Comercial Estratégica — Juan Valdez en Expo Osaka 2025</h4>
+        <p>En el marco de la Expo Osaka 2025, CREA acompañó a los representantes de Juan Valdez (Procafecol) en la construcción de una presencia comercial estratégica en Japón — más allá de su participación en el Pabellón Colombia. Integramos a Juan Valdez en la red de aliados que CREA operaba en terreno: su equipo participó en la agenda bilateral de la Cámara de Comercio de Cali y en eventos con actores clave del ecosistema de café especializado en Japón, incluyendo Typica, la plataforma japonesa líder en comercio directo de café verde que conecta productores y tostadores en más de 40 países.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services — full-bleed editorial, al estilo de las secciones "servicios" de ABRA -->
+  <section class="full-panel services-panel" id="servicios">
+    <div class="media-fill full-panel-media"><img src="../images/project-milan.jpg" alt="" /></div>
+    <div class="full-panel-overlay"></div>
+    <div class="full-panel-content">
+      <p class="eyebrow reveal">Servicios</p>
+      <h2 class="reveal">Lo que hacemos<br>por usted</h2>
+      <div class="services-list">
+        <div class="services-list-item reveal">
+          <span class="services-list-num">01</span>
+          <div>
+            <h3>Gestión de Proyectos</h3>
+            <p>Llevamos su proyecto del concepto a los resultados. Asesoramos en viabilidad, estructuración y ejecución, alineados con los objetivos de su organización.</p>
+          </div>
+        </div>
+        <div class="services-list-item reveal">
+          <span class="services-list-num">02</span>
+          <div>
+            <h3>Estrategia Comercial y de Mercadeo</h3>
+            <p>Conectamos su propuesta con el mercado correcto. Diseñamos e implementamos acciones que comunican su valor y generan resultados comerciales tangibles.</p>
+          </div>
+        </div>
+        <div class="services-list-item reveal">
+          <span class="services-list-num">03</span>
+          <div>
+            <h3>Estrategia de Internacionalización</h3>
+            <p>Abrimos las puertas del mercado internacional para su empresa. Le acompañamos en la identificación de mercados, canales de distribución y alianzas estratégicas.</p>
+          </div>
+        </div>
+        <div class="services-list-item reveal">
+          <span class="services-list-num">04</span>
+          <div>
+            <h3>Gestión de Comunicaciones</h3>
+            <p>Comunicamos su valor con claridad y estrategia. Desarrollamos planes de comunicación corporativa e institucional adaptados a las necesidades de su organización.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Methodology -->
+  <section class="methodology section" id="metodologia">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Metodología</p>
+        <h2>Cómo trabajamos</h2>
+        <p class="section-sub">Nuestro enfoque 360 garantiza que ninguna etapa de su proyecto quede desatendida.</p>
+      </div>
+      <div class="method-steps">
+        <div class="method-step reveal">
+          <div class="step-number">01</div>
+          <h3>Estructuramos</h3>
+          <p>Analizamos su proyecto, evaluamos su viabilidad y definimos una hoja de ruta clara con objetivos medibles.</p>
+        </div>
+        <div class="method-divider"></div>
+        <div class="method-step reveal">
+          <div class="step-number">02</div>
+          <h3>Desarrollamos</h3>
+          <p>Diseñamos las estrategias comerciales, de comunicación e internacionalización necesarias para alcanzar sus metas.</p>
+        </div>
+        <div class="method-divider"></div>
+        <div class="method-step reveal">
+          <div class="step-number">03</div>
+          <h3>Ejecutamos</h3>
+          <p>Gestionamos y ejecutamos cada etapa del proyecto, acompañándole hasta la entrega de resultados concretos.</p>
+        </div>
+      </div>
+      <p class="method-closing reveal">El proyecto es nuestro hasta que termina.</p>
+    </div>
+  </section>
+
+  <!-- Team — full-bleed editorial -->
+  <section class="full-panel team-panel" id="equipo">
+    <div class="media-fill full-panel-media"><img src="../images/project-osaka.jpg" alt="" /></div>
+    <div class="full-panel-overlay"></div>
+    <div class="full-panel-content">
+      <p class="eyebrow reveal">Equipo</p>
+      <h2 class="reveal">Experiencia que<br>genera confianza</h2>
+      <div class="team-row">
+        <div class="team-item reveal">
+          <img class="team-photo" src="../images/team-mauricio.jpeg" alt="Mauricio Prada" />
+          <h3>Mauricio Prada</h3>
+          <p class="team-role">Abogado</p>
+          <p class="team-bio">Estructuró y ejecutó la participación de Colombia en las Expos Universales de Shanghái 2010, Milán 2015 y Dubái 2020. Dirigió la Zona Verde de la COP16 Cali 2024 y gerenció ICARRD+20 en Cartagena.</p>
+        </div>
+        <div class="team-item reveal">
+          <img class="team-photo" src="../images/team-paula.jpeg" alt="Paula Douat Corredor" />
+          <h3>Paula Douat Corredor</h3>
+          <p class="team-role">Ingeniera Industrial</p>
+          <p class="team-bio">Participó en la estructuración de Expo Shanghái 2010 y dirigió los pabellones de Colombia en Milán 2015 y Dubái 2020, y el de Perú en Osaka 2025. Gerente General de la COP16 Cali 2024.</p>
+        </div>
+        <div class="team-item reveal">
+          <img class="team-photo" src="../images/team-federico.png" alt="Federico Echeverri" />
+          <h3>Federico Echeverri</h3>
+          <p class="team-role">Ingeniero Industrial</p>
+          <p class="team-bio">Ha operado en terreno cinco proyectos internacionales de gran escala, liderando equipos multiculturales y logística compleja en cada uno.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact section" id="contacto">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Contacto</p>
+        <h2>Hablemos de<br>su proyecto</h2>
+        <p class="section-sub">Cuéntenos qué necesita. Estaremos en contacto a la brevedad.</p>
+      </div>
+      <div class="contact-inner reveal">
+        <form class="contact-form">
+          <input type="text" placeholder="Su nombre" required />
+          <input type="email" placeholder="Su correo electrónico" required />
+          <input type="text" placeholder="Asunto" />
+          <textarea placeholder="Cuéntenos sobre su proyecto" rows="5" required></textarea>
+          <button type="submit" class="btn">Enviar mensaje</button>
+        </form>
+        <div class="contact-info">
+          <p>Coordinamos subcontratistas, protocolos y presupuesto. El cliente recibe el resultado, no el problema.</p>
+          <p>Escríbanos por WhatsApp:</p>
+          <a href="https://wa.me/573124788017" target="_blank" class="whatsapp-btn">
+            <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            +57 312 478 8017
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <img src="../images/isotipo-negativo-fondo-transparente.png" alt="CREA Global" height="48" />
+      <p class="footer-tagline">Hacemos que las cosas pasen.</p>
+      <div class="footer-links">
+        <a href="#">Política de Privacidad</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 CREA Global. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
