@@ -290,6 +290,11 @@ h1, h2, h3, h4 { line-height: 1.15; font-family: 'Poppins', sans-serif; font-wei
 .full-panel-content .eyebrow { color: var(--champagne); margin-bottom: 0.9rem; }
 .full-panel-content h2 { color: var(--hueso); font-size: clamp(1.8rem, 4vw, 2.5rem); letter-spacing: -0.01em; margin-bottom: 3.5rem; }
 
+/* Equipo: flat light section — no photo, so no scrim; light-section tokens. */
+.team-panel { background: var(--hueso); }
+.team-panel .full-panel-content .eyebrow { color: var(--bronce); }
+.team-panel .full-panel-content h2 { color: var(--ink); }
+
 .services-list { display: flex; flex-direction: column; text-align: left; max-width: 760px; margin: 0 auto; }
 .services-list-item { display: flex; gap: 1.8rem; padding: 1.8rem 0; border-top: 1px solid var(--rule-dark); }
 .services-list-item:last-child { border-bottom: 1px solid var(--rule-dark); }
@@ -299,10 +304,10 @@ h1, h2, h3, h4 { line-height: 1.15; font-family: 'Poppins', sans-serif; font-wei
 
 .team-row { display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; }
 .team-item { max-width: 260px; text-align: center; }
-.team-photo { display: block; width: 110px; height: 110px; object-fit: cover; filter: grayscale(100%); border-radius: 0; margin: 0 auto 1.2rem; border: 3px solid var(--rule-dark); }
-.team-item h3 { font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 1rem; color: var(--hueso); margin-bottom: 0.3rem; }
+.team-photo { display: block; width: 110px; height: 110px; object-fit: cover; filter: grayscale(100%); border-radius: 0; margin: 0 auto 1.2rem; border: 3px solid var(--rule); }
+.team-item h3 { font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 1rem; color: var(--ink); margin-bottom: 0.3rem; }
 .team-role { font-family: 'Poppins', sans-serif; font-size: 0.68rem; font-weight: 500; color: var(--bronce); letter-spacing: 0.28em; text-transform: uppercase; margin-bottom: 0.8rem; }
-.team-bio { font-family: 'Lora', serif; font-size: 0.88rem; line-height: 1.55; color: var(--body-dark); }
+.team-bio { font-family: 'Lora', serif; font-size: 0.88rem; line-height: 1.55; color: var(--body); }
 
 /* ── Methodology ── */
 .methodology { background: var(--onyx); position: relative; overflow: hidden; }
